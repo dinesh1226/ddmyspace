@@ -108,26 +108,26 @@ button:active {
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
-    position: fixed;
-    left: -200%;
-    top: 6.6rem;
+    position: absolute;
+    left: -120%;
+    bottom: -27rem;
+    padding: 0;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  button {
-    margin: 1rem 0;
+    padding-bottom: 1.8rem;
   }
 
   .nav-menu.active {
     left: 0;
-    margin: 0;
+    bottom: -27rem;
+    /* margin: 0 auto; */
     padding-bottom: 1.8rem;
+    margin: 0;
   }
 
   .nav-item {
@@ -233,7 +233,6 @@ button:active {
   background: #e2e8f0;
   padding: 0.4em;
   border-radius: 15px;
-
 }
 
 .card:hover {
